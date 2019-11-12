@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/kaist-gclab/delta-processor-null.git"
   },
-  "author": "",
+  "author": "Geometric Computing Lab., KAIST",
   "license": "AGPL-3.0-only",
   "bugs": {
     "url": "https://github.com/kaist-gclab/delta-processor-null/issues"
