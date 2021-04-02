@@ -2,6 +2,9 @@ version: 2
 jobs:
   build:
     docker:
-      - image: docker
+      - image: cimg/base:2020.01
     steps:
-      - run: echo 1
+      - checkout
+      - setup_remote_docker
+      - run:
+          command: ./test-ci.sh

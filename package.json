@@ -17,7 +17,7 @@
     "url": "https://github.com/kaist-gclab/delta-processor-null/issues"
   },
   "homepage": "https://github.com/kaist-gclab/delta-processor-null#readme",
-  "devDependencies": {
+  "dependencies": {
     "@types/argparse": "^2.0.5",
     "@types/node": "^14.14.37",
     "argparse": "^2.0.1",
