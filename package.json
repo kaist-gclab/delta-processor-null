@@ -2,8 +2,9 @@
   "name": "delta-processor-null",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "bin": "index.js",
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/kaist-gclab/delta-processor-null/issues"
   },
-  "homepage": "https://github.com/kaist-gclab/delta-processor-null#readme"
+  "homepage": "https://github.com/kaist-gclab/delta-processor-null#readme",
+  "dependencies": {
+    "@types/argparse": "^2.0.5",
+    "@types/node": "^14.14.37",
+    "argparse": "^2.0.1",
+    "typescript": "^4.2.3"
+  }
 }
