@@ -14,22 +14,21 @@ docker create \
     kaistgclab/delta-processor-null \
     /bin/true
 
-# Copy any file (in this case, we use src/index.ts)
-INPUT_FILE=index.ts
-docker cp "src/$INPUT_FILE" vcontainer:/data
+# Send any file to copy (in this case, we use src/index.ts)
+docker cp src/index.ts vcontainer:/data
 
 # Run container
 docker run \
     --volumes-from vcontainer \
     --name app \
     kaistgclab/delta-processor-null \
-    -i "$INPUT_FILE" \
+    -i index.ts \
     -o output.txt
 
-# Copy output (the entire `data` directory is copied to the current location)
+# Copy output (the entire `data` directory is copied to the current location).
 docker cp app:/data .
 
-# Check output.txt file exists
+# Check output.txt file exists under `data` directory.
 OUTPUT_FILE=data/output.txt
 if [ -f "$OUTPUT_FILE" ]; then
     echo "$OUTPUT_FILE exists."
