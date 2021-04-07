@@ -24,3 +24,19 @@ try {
     console.error(e);
     process.exit(1);
 }
+
+// Write result.json
+const result = {
+    'module_name': 'delta-processor-null',
+    'result': 'success',
+    'input': inputFileName,
+    'output': outputFileName,
+};
+
+try {
+    writeFileSync('result.json', JSON.stringify(result));
+} catch (e) {
+    console.log('The file could not be written');
+    console.error(e);
+    process.exit(1);
+}
