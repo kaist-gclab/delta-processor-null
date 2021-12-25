@@ -4,3 +4,9 @@ export interface ProcessorNode {
     key: string;
     name: string;
 }
+
+export interface JobType {
+    id: string;
+    key: string;
+    name: string;
+}
