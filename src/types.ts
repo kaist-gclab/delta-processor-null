@@ -31,3 +31,10 @@ export interface ProcessorNodeCapability {
 export interface JobScheduleRequest {
     processorNodeId: string;
 }
+
+export interface CreateJobRequest {
+    jobTypeId: string;
+    inputAssetId: string | null;
+    jobArguments: string;
+    assignedProcessorNodeId: string | null;
+}
