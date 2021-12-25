@@ -10,3 +10,9 @@ export interface JobType {
     key: string;
     name: string;
 }
+
+export interface AssetType {
+    id: string;
+    key: string;
+    name: string;
+}
