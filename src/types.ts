@@ -27,3 +27,7 @@ export interface ProcessorNodeCapability {
     jobType: JobType;
     assetType: AssetType;
 }
+
+export interface JobScheduleRequest {
+    processorNodeId: string;
+}
