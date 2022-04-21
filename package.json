@@ -1,6 +1,6 @@
 {
   "name": "delta-processor-null",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "bin": "index.js",
   "scripts": {
@@ -19,8 +19,8 @@
   "homepage": "https://github.com/kaist-gclab/delta-processor-null#readme",
   "dependencies": {
     "@types/argparse": "^2.0.10",
-    "@types/node": "^17.0.0",
+    "@types/node": "^17.0.25",
     "argparse": "^2.0.1",
-    "typescript": "^4.5.4"
+    "typescript": "^4.6.3"
   }
 }
